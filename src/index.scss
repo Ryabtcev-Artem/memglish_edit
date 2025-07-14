@@ -1,0 +1,132 @@
+@use './media' as *;
+/* Глобальные стили для темной темы */
+
+:root {
+  --bg-color: #121212;
+  --bg-contrast: #414348;
+  --overlay-color: rgba(17, 17, 17, 0.5);
+  --text-color: #e0e0e0;
+  --primary-color: #4caf50; /* приятный зеленый */
+  --primary-hover: #388e3c;
+  --button-bg: #333;
+  --button-hover-bg: #444;
+  --accent-color: #ab0909;
+  --link-color: #81c784;
+  --link-hover-color: #a5d6a7;
+  --border-radius: 6px;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,*::before,*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+html{
+  &.stop-scroll{
+    overflow: hidden;
+  }
+}
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover-color);
+  outline: none;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+.btn-primary{
+  background-color: #388e3c;
+}
+
+input, textarea, select {
+  background-color: #222;
+  color: var(--text-color);
+  border: 1px solid #444;
+  border-radius: var(--border-radius);
+  padding: 0.5em;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.main-wrapper {
+  max-width: 1600px;
+  margin-inline: auto;
+  @media (max-width: 1632px) {
+    max-width: 1300px;
+  }
+  @media (max-width: 1332px) {
+    max-width: 1168px;
+  }
+  @media (max-width: 1200px) {
+    margin-inline: 16px;
+  }
+}
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Пример карточки для презентации */
+.card {
+  background-color: #1e1e1e;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.9);
+}
+
+.ml-4{
+  margin-left: 1rem;
+}
+.mb-4{
+  margin-bottom: 1rem;
+}

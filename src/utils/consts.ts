@@ -1,0 +1,1 @@
+export const defaultPicturePreview = "https://1.downloader.disk.yandex.ru/preview/07f777aeae8b7b268f7ac83084486aec965db581a60bf20cd388bf233702b868/inf/BfYKN2J5F_47jbkV6G6G6rCP-Av2i-qLFCZxwxuH4J9eQnzajHk7hzIuv5aQivTXh_mJEMxjnz_bfNM8Rm9Pxg%3D%3D?uid=1769006612&filename=sootno.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=1769006612&tknv=v3&size=1920x953"
