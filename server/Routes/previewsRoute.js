@@ -4,7 +4,7 @@ import {
   createPreview,
   updatePreview,
   deletePreview
-} from '../controllers/previewsController.js';
+} from "../Controllers/previewsController.js";
 
 const router = express.Router();
 
