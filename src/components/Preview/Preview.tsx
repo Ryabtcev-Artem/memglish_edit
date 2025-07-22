@@ -13,7 +13,7 @@ export default function Preview() {
     previews,
     isLoading,
     error
-  } = useGet('http://localhost:5000/api/previews', 'previews')
+  } = useGet('https://memglish-server.onrender.com/api/previews', 'previews')
 
   function showEditModal(preview: IPreview) {
     document.documentElement.classList.add('stop-scroll')

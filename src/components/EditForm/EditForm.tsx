@@ -19,9 +19,9 @@ export default function EditForm(props: EditFormProps ) {
     isSuccess,
     isError,
     error
-  } = usePut(`http://localhost:5000/api/previews/${currentPresentation._id}`, 'previews')
+  } = usePut(`https://memglish-server.onrender.com/api/previews/${currentPresentation._id}`, 'previews')
   const isNewPreview = currentPresentation?._id === 'newPreview'
-  const {mutate: createPreview} = usePost(`http://localhost:5000/api/previews`, 'previews')
+  const {mutate: createPreview} = usePost(`https://memglish-server.onrender.com/api/previews`, 'previews')
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()

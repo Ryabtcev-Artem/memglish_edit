@@ -17,7 +17,7 @@ export default function Edit(props: EditProps) {
     document.documentElement.classList.remove('stop-scroll')
   }
 
-  const {mutate: deletePreview} = useDelete(`http://localhost:5000/api/previews/${currentPresentation?._id}`, 'previews')
+  const {mutate: deletePreview} = useDelete(`https://memglish-server.onrender.com/api/previews/${currentPresentation?._id}`, 'previews')
 
   async function handleDeletePreview() {
     const deleteConfirm = confirm("Вы точно уверены, что хотите полностью удалить презентацию?")
